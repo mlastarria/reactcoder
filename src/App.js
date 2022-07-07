@@ -10,8 +10,11 @@ function App(){
 
     <div className="App">
       <NavBar />
-      <ItemListContainer 
-      greeting="Hola coderhouse este es un prop ItemListContainer"/>
+
+      <div className='container'>
+      <ItemListContainer />
+      </div>
+      
     </div>
     
   );
