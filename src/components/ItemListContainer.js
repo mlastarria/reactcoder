@@ -14,7 +14,7 @@ function ItemListContainer(){
                     <h5 class="card-title">Nintendo Switch OLED Pack Just Dance</h5>
                     <p class="card-text">$399.99</p>
 
-                    <ItemCount />
+                    <ItemCount stock={5} initial={1}/>
 
                 </div>
             </div>

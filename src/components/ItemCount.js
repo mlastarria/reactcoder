@@ -1,20 +1,53 @@
 import React,{useState} from 'react';
 
-const ItemCount = () =>{
+const ItemCount = ({stock,initial}) =>{
 
-    const [rates,setRates] =useState(0);
+    const [rates,setRates] =useState(initial);
 
-    const handleClick=()=>{
-        setRates(rates + 1);
+    const addClick=()=>{
+        if(rates<stock){
+            const numeroActual = rates + 1;
+            setRates(numeroActual);
+        }
+        
+    }
+
+    const substractClick=()=>{
+        if(rates>stock){
+            const numeroActual = rates + -1;
+            setRates(numeroActual);
+        }
     }
 
 
     return(
         
         <div class="d-grid gap-2 ">
-            <p class="mx-auto">Se añadio {rates} al carrito</p>
-            <button class="btn btn-success" type="button" onClick={handleClick}>Añadir Cantidad</button>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col d-grid">
+                         <button class="btn btn-danger" onClick={substractClick}>-</button>
+                    </div>
+
+                    <div class="col">
+                        <p class="text-center">{rates}</p>
+                    </div>
+
+                    <div class="col d-grid">
+                        <button class="btn btn-success" onClick={addClick}>+</button>
+                    </div>
+
+                </div>
+            </div>
+
+
             
+            <button class="btn btn-primary" type="button">Añadir al Carrito</button>
+            
+
+
         </div>
         
     );
