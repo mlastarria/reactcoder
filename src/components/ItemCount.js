@@ -13,7 +13,7 @@ const ItemCount = ({stock,initial}) =>{
     }
 
     const substractClick=()=>{
-        if(rates>stock){
+        if(rates>initial){
             const numeroActual = rates + -1;
             setRates(numeroActual);
         }
