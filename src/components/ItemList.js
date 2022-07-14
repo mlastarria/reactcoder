@@ -7,7 +7,7 @@ const ItemList = ({listado = []}) => {
 
     return(
        
-        listado.map (film =>  <Item key={film.id} info={film} /> )
+        listado.map (producto =>  <Item key={producto.id} info={producto} /> )
        
 
 
