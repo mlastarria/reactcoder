@@ -1,30 +1,29 @@
-import React from 'react';
-import ItemCount from './ItemCount';
+import React, {useState} from 'react';
 import ItemList from './ItemList';
+import products from './product-data';
 
 
 function ItemListContainer(){
+
     
-    const onAdd=(param)=>{console.log("la cantidad es " + param)}
+    const [listado, setListado] = useState([]);
+
+    const getListado=new Promise(resolve =>{
+        setTimeout(()=>{
+            resolve(products);
+        },2000);
+    });
+
+    getListado.then(res=> setListado(res));
+
+
 
 
     return(
         
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-        <div class="col">
-            <div class="card h-100 p-3">
-                <img src="https://i.linio.com/p/c878ef90978a7ba1f240fcc4b7fb9f8a-product.jpg" class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <h5 class="card-title">Nintendo Switch OLED Pack Just Dance</h5>
-                    <p class="card-text">$399.99</p>
-
-                    <ItemCount stock={5} initial={1} onAdd={onAdd} />
-
-                </div>
-            </div>
-        </div>
-        
-</div>
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+        <ItemList listado={listado} />
+    </div>
 
 
     );
