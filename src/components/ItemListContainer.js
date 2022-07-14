@@ -1,9 +1,13 @@
 import React from 'react';
 import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 
 
 function ItemListContainer(){
     
+    const onAdd=(param)=>{console.log("la cantidad es " + param)}
+
+
     return(
         
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
@@ -14,7 +18,7 @@ function ItemListContainer(){
                     <h5 class="card-title">Nintendo Switch OLED Pack Just Dance</h5>
                     <p class="card-text">$399.99</p>
 
-                    <ItemCount stock={5} initial={1}/>
+                    <ItemCount stock={5} initial={1} onAdd={onAdd} />
 
                 </div>
             </div>
