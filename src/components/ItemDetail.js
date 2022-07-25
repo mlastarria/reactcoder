@@ -15,6 +15,7 @@ const ItemDetail = ({listado}) => {
                 <div class="card-body">
                     <h4 class="card-title">{listado.nombre}</h4>
                     <h5 class="card-title">ID: {listado.id}</h5>
+                    <p class="card-text">{listado.descripcion}</p>
                     <p class="card-text">US$ {listado.precio}</p>
 
                   

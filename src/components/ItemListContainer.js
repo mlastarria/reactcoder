@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState} from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import products from './product-data';
 
@@ -8,13 +9,28 @@ function ItemListContainer(){
     
     const [listado, setListado] = useState([]);
 
-    const getListado=new Promise(resolve =>{
-        setTimeout(()=>{
-            resolve(products);
-        },2000);
-    });
+    const {categoria}=useParams();
 
-    getListado.then(res=> setListado(res));
+    useEffect(() =>{
+        
+        const getListado=new Promise(resolve =>{
+            setTimeout(()=>{
+                resolve(products);
+            },2000);
+        });
+
+        if (categoria){
+        getListado.then(res=> setListado(res.filter(products=> products.categoria === categoria)));
+        }else{
+
+        getListado.then(res=> setListado(res));
+        }
+
+
+    }, [categoria]);
+
+    
+
 
 
 

@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# PROYECTO TIENDA DE VIDEOJUEGOS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado para desafios de Coderhouse usando React
 
 ## Available Scripts
 
