@@ -40,7 +40,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import ItemCount from './ItemCount';
+
 
 
 const Item = ({ info }) => {
@@ -74,4 +74,4 @@ const Item = ({ info }) => {
 export default Item;
 
 
-{/* //Lo guardo para despues <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
+

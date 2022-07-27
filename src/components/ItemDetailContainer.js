@@ -7,15 +7,6 @@ import { useParams } from 'react-router-dom';
 function ItemDetailContainer(){
 
     
-    // const [listado, setListado] = useState({});
-
-    // const getListado=new Promise(resolve =>{
-    //     setTimeout(()=>{
-    //         resolve(products[1]);
-    //     },2000);
-    // });
-
-    // getListado.then(res=> setListado(res));
 
 
     const [listado, setListado] = useState({});
@@ -40,16 +31,7 @@ function ItemDetailContainer(){
 
     }, [id]);
 
-    // useEffect(() => {
-    //     const getListado = new Promise((resolve) => {
-    //       setTimeout(() => {
-    //         resolve(products);
-    //       }, 1000);
-    //     });
-    //     getListado.then((res) =>
-    //           setListado(res.find((products) => products.Id === id)),
-    //       );
-    //   }, [id]);
+    
     
 
 
