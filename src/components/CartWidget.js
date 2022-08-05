@@ -1,23 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from './CartContext';
 import '../App.css';
 
-function CartWidget(){
-    
-    return(
-        
-
-        <i class="bi bi-cart position-relative">
-
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-  
+function CartWidget() {
+    const context = useContext(CartContext)
+    if (context.cartList.length === 0) {
+        return <></>
+    }
+    return (
+        <i className="bi bi-cart position-relative">
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {context.totalProducts()}
             </span>
 
         </i>
-    
-    
-
-
     );
 }
 

@@ -10,13 +10,13 @@
     
 //     return(
 
-//         <div class="col">
-//             <div class="card h-100 p-3">
-//                 <img src={info.imagenurl}  class="card-img-top" alt="..."/>
-//                 <div class="card-body">
-//                     <h4 class="card-title">{info.nombre}</h4>
-//                     <h5 class="card-title">ID: {info.id}</h5>
-//                     <p class="card-text">US$ {info.precio}</p>
+//         <div className="col">
+//             <div className="card h-100 p-3">
+//                 <img src={info.imagenurl}  className="card-img-top" alt="..."/>
+//                 <div className="card-body">
+//                     <h4 className="card-title">{info.nombre}</h4>
+//                     <h5 className="card-title">ID: {info.id}</h5>
+//                     <p className="card-text">US$ {info.precio}</p>
 
 //                     <ItemCount stock={5} initial={1} onAdd={onAdd} />
 
@@ -47,17 +47,17 @@ const Item = ({ info }) => {
 	return (
 		
 			
-            <div class="col">
-             <div class="card h-100 p-3">
+            <div className="col">
+             <div className="card h-100 p-3">
                 <Link to={`/item/${info.id}`}>
-                    <img src={info.imagenurl}  class="card-img-top" alt="..."/>
+                    <img src={info.imagenurl}  className="card-img-top" alt="..."/>
                 </Link>
                    
-                    <div class="card-body">
-                    <h4 class="card-title">{info.nombre}</h4>
-                    <p class="card-text">US$ {info.precio}</p>
+                    <div className="card-body">
+                    <h4 className="card-title">{info.nombre}</h4>
+                    <p className="card-text">US$ {info.precio}</p>
 
-                    <Link to={`/item/${info.id}`}> <button class="btn btn-primary" type="button" >Ver Detalles</button>  </Link>
+                    <Link to={`/item/${info.id}`}> <button className="btn btn-primary" type="button" >Ver Detalles</button>  </Link>
 
 
             </div>

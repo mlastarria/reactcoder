@@ -18,7 +18,7 @@ function ItemDetailContainer(){
         const getListado=new Promise(resolve =>{
             setTimeout(()=>{
                 resolve(products);
-            },2000);
+            },10);
         });
 
         if (id){
@@ -37,7 +37,7 @@ function ItemDetailContainer(){
 
     return(
         
-    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+    <div className="row row-cols-1 row-cols-md-4 g-4 mt-3">
         <ItemDetail listado={listado} />
     </div>
 

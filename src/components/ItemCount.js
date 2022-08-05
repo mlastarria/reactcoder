@@ -24,21 +24,21 @@ const ItemCount = ({stock,initial,onAdd}) =>{
 
     return(
         
-        <div class="d-grid gap-2 ">
+        <div className="d-grid gap-2 ">
 
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
 
-                    <div class="col d-grid">
-                         <button class="btn btn-danger" onClick={substractClick}>-</button>
+                    <div className="col d-grid">
+                         <button className="btn btn-danger" onClick={substractClick}>-</button>
                     </div>
 
-                    <div class="col">
-                        <p class="text-center">{rates}</p>
+                    <div className="col">
+                        <p className="text-center">{rates}</p>
                     </div>
 
-                    <div class="col d-grid">
-                        <button class="btn btn-success" onClick={addClick}>+</button>
+                    <div className="col d-grid">
+                        <button className="btn btn-success" onClick={addClick}>+</button>
                     </div>
 
                 </div>
@@ -46,7 +46,9 @@ const ItemCount = ({stock,initial,onAdd}) =>{
 
 
             
-            <button class="btn btn-primary" type="button" onClick={()=>onAdd(rates)}>Añadir al Carrito</button>
+            <button className="btn btn-primary" type="button" onClick={()=>onAdd(rates)}>
+                {rates === stock ? "Finish my purchase" : "Añadir al Carrito"}
+            </button>
             
 
 
