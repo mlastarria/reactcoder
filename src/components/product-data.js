@@ -10,7 +10,7 @@ const products =[
       "nombre": "Nintendo Switch OLED Pack New Super Mario Deluxe",
       "descripcion":"Disfruta de la última edición de la consola de Nintendo con mejor pantalla. LLevate de regalo el juego New Super Mario Deluxe sellado.",
       "precio":203,
-      "imagenurl": "https://rockcontent.com/es/wp-content/uploads/sites/3/2019/02/Consejos-para-hacer-ima%CC%81genes-increi%CC%81bles-1024x538.png",
+      "imagenurl": "https://mauriciolastarria.com/img-react/nintendoswitcholed.png",
       "stock": 3,
       "categoria":"nintendo"
   
@@ -21,7 +21,7 @@ const products =[
         "nombre": "Playstation 4 Uncharted Bundle",
         "descripcion":"Consola PS4 junto a las tres aclamadas de UNCHARTED. Vive la épica historia de Drake en las campañas para un jugador de UNCHARTED: Drake's Fortune, UNCHARTED 2: Among Thieves y UNCHARTED 3: Drake's Deception.",
         "precio":203,
-        "imagenurl": "https://rockcontent.com/es/wp-content/uploads/sites/3/2019/02/Consejos-para-hacer-ima%CC%81genes-increi%CC%81bles-1024x538.png",
+        "imagenurl": "https://mauriciolastarria.com/img-react/ps4uncharted.png",
         "stock": 6,
         "categoria":"playstation"
     
@@ -44,7 +44,7 @@ const products =[
         "nombre": "Nintendo Switch Edicion 2017",
         "descripcion":"Primera edición, sellada, de la consola híbrida de última generación de Nintendo.",
         "precio":203,
-        "imagenurl": "https://rockcontent.com/es/wp-content/uploads/sites/3/2019/02/Consejos-para-hacer-ima%CC%81genes-increi%CC%81bles-1024x538.png",
+        "imagenurl": "https://mauriciolastarria.com/img-react/nintendoswitch2017.png",
         "stock": 6,
         "categoria":"nintendo"
     
@@ -53,10 +53,10 @@ const products =[
 
     {
         "id": 4,
-        "nombre": "Xbox Series X",
+        "nombre": "Xbox Series X Resident Evil 8 Village Edition",
         "descripcion":"Loremp Ipsum",
         "precio":203,
-        "imagenurl": "https://rockcontent.com/es/wp-content/uploads/sites/3/2019/02/Consejos-para-hacer-ima%CC%81genes-increi%CC%81bles-1024x538.png",
+        "imagenurl": "https://mauriciolastarria.com/img-react/xboxseriesx.png",
         "stock": 2,
         "categoria":"xbox"
     

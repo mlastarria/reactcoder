@@ -7,7 +7,7 @@ function NavBar(){
     
     return(
     
-    <nav className="navbar navbar-dark bg-light navbar-expand-lg px-4">
+    <nav className="navbar navbar-dark bg-success navbar-expand-lg px-4">
        
         <div className="container-fluid">
             

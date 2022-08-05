@@ -61,6 +61,31 @@ const ProductAmount = styled.div`
   font-weight: 200;
 `;
 
-export{WrapperCart,TitleCart,ContentCart,Product,ProductDetail,ImageCart,Details,PriceDetail,ProductPrice,ProductAmount,ProductAmountContainer
+const SummaryOutline = styled.div`
+    width: 100%;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    padding: 20px 10px;
+`;
+
+const SummaryTitle = styled.h1`
+  font-size: 24px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+`;
+
+const SummarySubValue = styled.h3`
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+const SummaryRow = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+`;
+
+export{WrapperCart,TitleCart,ContentCart,Product,ProductDetail,ImageCart,Details,PriceDetail,ProductPrice,ProductAmount,ProductAmountContainer,SummaryOutline,SummaryTitle,SummarySubValue,SummaryRow
 
 }
