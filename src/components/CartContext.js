@@ -21,7 +21,7 @@ const CartContextProvider =({children})=>{
     }
 
 
-// THE NEW
+
 
     const totalPrice = () => {
 		return cartList.reduce((prev, act) => prev + act.quantity * act.price, 0);

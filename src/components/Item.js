@@ -48,6 +48,7 @@ const Item = ({ info }) => {
 		
 			
             <div className="col">
+          
              <div className="card h-100 p-3">
                 <Link to={`/item/${info.id}`}>
                     <img src={info.imagenurl}  className="card-img-top" alt="..."/>
@@ -66,6 +67,7 @@ const Item = ({ info }) => {
 
             </div>
         </div>
+    
 			
 		
 	);

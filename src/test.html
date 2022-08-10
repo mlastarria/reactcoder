@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#iconos-flotantes , img{
+  width: 170px;
+  height: 140px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-direction: reverse;  
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   { top:0px;}
+  50%  { top:15px;}
+  100% { top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example will run the animation in reverse direction (backwards):</p>
+
+<div id="iconos-flotantes">
+    <img src="https://trombosisyanticoagulacion.com/wp-content/uploads/2022/08/flotantes-icons.png"/>
+</div>
+
+</body>
+</html>
