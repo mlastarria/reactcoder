@@ -1,16 +1,18 @@
 import { createContext, useState } from "react";
 export const CartContext = createContext();
 
-const CartContextProvider =({children})=>{
+const CartContextProvider = ({ children }) => {
 
-    const[cartList, setCartList]= useState([]);
+    const [cartList, setCartList] = useState([]);
 
     const addItem = (item, quantity) => {
         if (!isInCart(item.id)) {
             setCartList([...cartList, {
                 id: item.id,
                 name: item.nombre,
+                image: item.imagenurl,
                 price: item.precio,
+                stock: item.stock,
                 quantity,
             }])
         }
@@ -21,21 +23,16 @@ const CartContextProvider =({children})=>{
     }
 
 
-
-
     const totalPrice = () => {
-		return cartList.reduce((prev, act) => prev + act.quantity * act.price, 0);
-	};
+        return cartList.reduce((prev, act) => prev + act.quantity * act.price, 0);
+    };
 
-	const totalProducts = () =>
-		cartList.reduce(
-			(acumulador, productoActual) => acumulador + productoActual.quantity,
-			0,
-		);
-
-
-
-
+    const totalProducts = () => {
+        cartList.reduce(
+            (acumulador, productoActual) => acumulador + productoActual.quantity,
+            0,
+        );
+    }
 
     const clear = () => {
         setCartList([]);
@@ -45,15 +42,11 @@ const CartContextProvider =({children})=>{
         return cartList.some(item => item.id === id);
     }
 
-    return(
-        <CartContext.Provider value={{addItem,removeItem,clear,totalPrice,totalProducts,cartList}}>
-            
+    return (
+        <CartContext.Provider value={{ addItem, removeItem, clear, totalPrice, totalProducts, cartList }}>
             {children}
-
         </CartContext.Provider>
     )
-
-
 }
 
 export default CartContextProvider;

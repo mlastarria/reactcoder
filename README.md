@@ -1,70 +1,96 @@
-# PROYECTO TIENDA DE VIDEOJUEGOS
+# Título del Proyecto
 
-Este proyecto fue creado para desafios de Coderhouse usando React
+Tienda de Videojuegos Nuevos y Sellados, front end.
 
-## Available Scripts
+## Comenzando 🚀
 
-In the project directory, you can run:
+Estas instrucciones serviran para poner en funcionamiento el proyecto.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Previsualización 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Pre-requisitos 📋
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+El proyecto usa React, y fue creado con Create React App.
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalación 🔧
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+Da un ejemplo
+```
 
-### `npm run eject`
+_Y repite_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+hasta finalizar
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Ejecutando las pruebas ⚙️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+_Explica como ejecutar las pruebas automatizadas para este sistema_
 
-## Learn More
+### Analice las pruebas end-to-end 🔩
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_Explica que verifican estas pruebas y por qué_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Da un ejemplo
+```
 
-### Code Splitting
+### Y las pruebas de estilo de codificación ⌨️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_Explica que verifican estas pruebas y por qué_
 
-### Analyzing the Bundle Size
+```
+Da un ejemplo
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Despliegue 📦
 
-### Making a Progressive Web App
+_Agrega notas adicionales sobre como hacer deploy_
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Construido con 🛠️
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [React Router Dom](https://maven.apache.org/) - Manejador de dependencias
+* [Styled Components](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Firebase](https://rometools.github.io/rome/) - Usado para generar RSS
 
-### Deployment
+## Contribuyendo 🖇️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
-### `npm run build` fails to minify
+## Wiki 📖
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+
+## Versionado 📌
+
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+
+## Autores ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+
+## Expresiones de Gratitud 🎁
+
+* Gracias a Coderhouse, al profesor Alex Marin y al tutor Alejo Piñero.
+
+
