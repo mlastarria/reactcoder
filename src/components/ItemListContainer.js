@@ -10,7 +10,7 @@ import { getFirestore, collection, getDocs, query, where,doc} from 'firebase/fir
 
 const ItemListContainer = () => {
 
-    // const [data, setData] = useState([]);
+   
     const [listado, setListado] = useState([]);
     const {categoria}=useParams();
 

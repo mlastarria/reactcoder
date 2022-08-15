@@ -4,10 +4,15 @@ import { addDoc, collection, getFirestore, serverTimestamp } from 'firebase/fire
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { SummaryOutline, SummaryTitle, SummarySubKey, SummarySubValue, SummaryRow, SummaryFormGroup, SummaryInput, SummaryErrorSpan } from './styledComponents';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 const CartSummary = (props) => {
     const { count, price } = props;
     const test = useContext(CartContext)
+    const MySwal = withReactContent(Swal)
+
 
     const onConfirm = (name, email, phone) => {
         const db = getFirestore();
@@ -22,9 +27,19 @@ const CartSummary = (props) => {
             items: test.cartList.map(item => ({ id: item.id, title: item.name, price: item.price, quantity: item.quantity })),
             total: price,
         }
+
         addDoc(orderCollection, order)
-            .then(({ id }) => alert('Se ha creado la orden Satisfactoriamente. Su id de compra es ' + id))
-            .catch(err => alert(err))
+        
+            .then(({ id }) => 
+            MySwal.fire({
+                title: <strong>¡Orden Ingresada!</strong>,
+                html: <i>Su id de compra es + {id}</i>,
+                icon: 'success'
+              })
+            )
+
+
+            .catch(err => console.log(err))
     }
 
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/

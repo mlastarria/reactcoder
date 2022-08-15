@@ -9,7 +9,7 @@ const ItemDetail = ({ listado }) => {
 
     const onAdd = (item) => {
         setGotToCart(true);
-        // test.addToCart(item)
+     
         test.addItem(listado, item)
     }
 
