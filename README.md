@@ -3,15 +3,15 @@
 Tienda de Videojuegos Nuevos y Sellados, front end.
 
 
-### Previsualización 
+## Previsualización 
 
 ![Image text](https://mauriciolastarria.com/img-react/tienda-videojuegos.gif)
 
-### Sobre el proyecto 📋
+## Sobre el proyecto 📋
 
-```
+
 El proyecto usa React, y fue creado con Create React App. Es el prototipo para una tienda virtual de consolas selladas y nuevas de las 3 principales marcas del mundo.
-```
+
 
 ### Categorias y filtrados
 
