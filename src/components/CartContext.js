@@ -28,7 +28,7 @@ const CartContextProvider = ({ children }) => {
     };
 
     const totalProducts = () => {
-        cartList.reduce(
+        return cartList.reduce(
             (acumulador, productoActual) => acumulador + productoActual.quantity,
             0,
         );

@@ -38,8 +38,8 @@ const Cart = () => {
                 </div>
             ) : (
                 <div>
-                    <div>No items</div>
-                    <Link to="/">Go back</Link>
+                    <div>No hay productos en el carrito</div>
+                    <Link to="/">Volver al HOME</Link>
                 </div>
             )}
         </WrapperCart>

@@ -9,8 +9,9 @@ Estas instrucciones serviran para poner en funcionamiento el proyecto.
 
 ### Previsualización 
 
+![Image text](https://mauriciolastarria.com/img-react/tienda-videojuegos.gif)
 
-### Pre-requisitos 📋
+### HOME 📋
 
 
 ```
@@ -19,18 +20,12 @@ El proyecto usa React, y fue creado con Create React App.
 
 ### Instalación 🔧
 
+### HOME
+La pagina agrupa los productos en 3 categorias
+Nintendo
+Playstation
+Xbox
 
-```
-Da un ejemplo
-```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Ejecutando las pruebas ⚙️
 
@@ -56,13 +51,15 @@ Da un ejemplo
 
 _Agrega notas adicionales sobre como hacer deploy_
 
-## Construido con 🛠️
+## Construido con las siguientes Librerias 🛠️
 
 
-* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [React Router Dom](https://maven.apache.org/) - Manejador de dependencias
-* [Styled Components](https://rometools.github.io/rome/) - Usado para generar RSS
-* [Firebase](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Bootstrap](http://www.dropwizard.io/1.0.2/docs/) - Usado para algunos estilos
+* [React Router Dom](https://maven.apache.org/) - Usado para las rutas
+* [Styled Components](https://rometools.github.io/rome/) - Usado para estilos de componentes
+* [Firebase](https://rometools.github.io/rome/) - Usado para base de datos
+* [Formik](https://rometools.github.io/rome/) - Usado para formularios
+
 
 ## Contribuyendo 🖇️
 

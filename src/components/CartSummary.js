@@ -103,7 +103,7 @@ const CartSummary = (props) => {
                     }
                 </SummaryFormGroup>
                 <button type="submit" className="btn btn-success w-100 mt-3 mb-2">CONFIRMAR COMPRA</button>
-                <button type="reset" className="btn btn-danger w-100">RESET FORM</button>
+                <button type="reset" className="btn btn-danger w-100">BORRAR FORMULARIO</button>
             </form>
         </SummaryOutline>
     )
